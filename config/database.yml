@@ -26,7 +26,7 @@ development:
   database: hellorailsDB
   port: 5432
   host: localhost
-  password: 5386
+  password: *
   username: postgres
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -87,5 +87,5 @@ production:
   database: hellorailsDB
   port: 5432
   host: localhost
-  password: 5386
+  password: *
   username: postgres
