@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  describe "Test the Post:" do
+  describe "Test the Post validations:" do
     subject { Post.new(text: "post text", title: "title", likes_counter: 0, comments_counter: 0)}
     before {subject.save}
 
@@ -24,6 +24,15 @@ RSpec.describe Post, type: :model do
     it "Comments counter must be an integer" do
       subject.comments_counter = "a"
       expect(subject).to_not be_valid
+    end
+  end
+
+  describe "Test the Post methode:" do
+    user = User.new(name: "User's name", photo: "User's photo", bio:"User's bio", postscounter: 0)
+    before { 8.times { Comment.new(post: subject, author: user, text: 'text') } }
+
+    it 'recent five posts should return 5 comments' do
+    expect(subject.recent_comments).to eql(subject.comments.last(5))
     end
   end
 end
