@@ -7,6 +7,6 @@ class User < ApplicationRecord
   validates :postscounter, numericality: { only_integer: true }, comparison: {greater_than_or_equal_to: 0}
 
   def recent_posts
-    posts.order(created_at: :desc).limit(3)
+    posts.order(created_at: :desc).last(3)
   end
 end
