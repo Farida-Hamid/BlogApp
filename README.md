@@ -25,31 +25,21 @@ You will be building the Blog app for three weeks. Here is the list of projects 
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need **[describe prerequisites]**:
-
-```sh
- gem install rails
-```
-
 ### Setup
 
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:Farida-Hamid/Ruby-Enumerable.git
-  cd Ruby-Enumerable
+  git clone git@github.com:Farida-Hamid/BlogApp.git
+  cd BlogApp
 ```
 
 ### Install
 
-Install this project with **[package manager]**:
+Install dependencies:
 
 ```sh
-  cd Ruby-Enumerable
-  gem install
-
+bundle install
 ```
 
 ### Usage
@@ -60,7 +50,19 @@ To run the project, execute the following command:
   rails server
 ```
 
-<!-- AUTHORS -->
+### Setup database
+run:
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+### Run the app
+run:
+```
+rails s
+```
 
 ## 👥 Authors <a name="authors"></a>
 
