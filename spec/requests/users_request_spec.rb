@@ -22,7 +22,7 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status(:success)
     end
 
-    xit 'render template works' do
+    it 'render template works' do
       expect(response).to render_template(:show)
     end
 
