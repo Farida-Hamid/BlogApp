@@ -1,0 +1,28 @@
+.users {
+  padding: 3%;
+}
+.user_container {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
+
+.photo {
+  width: 20%;
+  border: 1px solid;
+}
+
+.user-info {
+  width: 80%;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 1%
+}
+
+h4 {
+  padding-top: 7%;
+}
