@@ -64,6 +64,12 @@ run:
 rails s
 ```
 
+### Run tests
+
+run:
+
+`rspec`
+
 ## 👥 Authors <a name="authors"></a>
 
 
