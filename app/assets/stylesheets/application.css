@@ -39,7 +39,7 @@ h3 {
 
 .post {
   border: 2px solid;
-  margin: 2% 0;
+  margin: 2% 0 0 0;
   padding: 2%;
 }
 
@@ -57,5 +57,11 @@ button {
   background-color: white;
   text-align: center;
   display: block;
-  margin: auto;
+  margin: 2% auto;
+}
+
+.comments {
+  border: 2px solid;
+  padding: 0 1%;
+  margin: 1px 0;
 }
