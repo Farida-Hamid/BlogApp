@@ -1,11 +1,11 @@
-<div class="users">
-    <% @users.each do |user| %>
-      <div class="user_container">
-        <div class="photo"></div>
-        <div class="user-info">
-          <h1><%= user.name%></h1>
-          <h4>Number of posts: <%= user.postscounter%></h4>
-        </div>
+<div>
+  <% @users.each do |user| %>
+    <div class="user_container">
+      <div class="photo"></div>
+      <div class="user-info">
+        <h1><%= user.name%></h1>
+        <h4>Number of posts: <%= user.postscounter%></h4>
       </div>
-    <% end %>
+    </div>
+  <% end %>
 </div>

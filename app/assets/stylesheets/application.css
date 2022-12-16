@@ -1,4 +1,4 @@
-.users {
+body {
   padding: 3%;
 }
 .user_container {
@@ -20,9 +20,19 @@
   display: flex;
   justify-content: space-between;
   padding: 2%;
-  margin: 1%
+  margin: 1% 0;
 }
 
 h4 {
   padding-top: 7%;
+}
+
+h3 {
+  padding-bottom: 1%;
+  margin-top: 0;
+}
+
+.bio {
+  border: 1px solid;
+  padding: 2%;
 }
