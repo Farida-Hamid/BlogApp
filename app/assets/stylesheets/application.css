@@ -1,6 +1,7 @@
 body {
   padding: 3%;
 }
+
 .user_container {
   display: flex;
   width: 100%;
@@ -46,14 +47,14 @@ h3 {
 .like-comment {
   padding-left: 80%;
   margin: 0;
-  width:fit-content;
+  width: fit-content;
 }
 
 button {
   font-size: 16px;
   border: 2px solid;
   padding: 1%;
-  box-shadow: 5px 5px 0px 0px;
+  box-shadow: 5px 5px 0 0;
   background-color: white;
   text-align: center;
   display: block;
