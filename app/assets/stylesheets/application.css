@@ -2,6 +2,11 @@ body {
   padding: 3%;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 .user_container {
   display: flex;
   width: 100%;
