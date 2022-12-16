@@ -1,1 +1,24 @@
-<h1>Display Posts</h1>
+<div>
+  <div class="user_container">
+    <div class="photo"></div>
+    <div class="user-info">
+      <h1><%= @user.name%></h1>
+      <h4>Number of posts: <%= @user.postscounter%></h4>
+    </div>
+  </div>
+  <div>
+    <% @posts.each_with_index do |post, index|%>
+      <div class="post">
+        <h3><%=link_to 'Post # ', user_post_path(@user.id, post), :class => 'link'%><%=index%></h3>
+        <p><%= post.text%></p>
+      <p class="like-comment">Comments: <%= post.comments_counter%> Likes: <%= post.likes_counter%></p>
+      </div>
+      <div class="comments">
+        <% post.recent_comments.each do |comment|%>
+          <p><%= User.find(comment.author_id).name %>: <%= comment.text %></p>
+        <%end%>
+      </div>
+    <%end%>
+  </div>
+  <button>Pagination</button>
+</div>

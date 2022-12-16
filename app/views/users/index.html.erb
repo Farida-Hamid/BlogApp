@@ -1,1 +1,11 @@
-<h1>Display Users</h1>
+<div>
+  <% @users.each do |user| %>
+    <div class="user_container">
+      <div class="photo"></div>
+      <div class="user-info">
+        <h1><%= link_to user.name, user, :class => 'link'%></h1>
+        <h4>Number of posts: <%= user.postscounter%></h4>
+      </div>
+    </div>
+  <% end %>
+</div>
