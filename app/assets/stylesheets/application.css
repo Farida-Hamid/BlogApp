@@ -11,12 +11,12 @@ body {
 
 .photo {
   width: 20%;
-  border: 1px solid;
+  border: 2px solid;
 }
 
 .user-info {
   width: 80%;
-  border: 1px solid;
+  border: 2px solid;
   display: flex;
   justify-content: space-between;
   padding: 2%;
@@ -33,6 +33,29 @@ h3 {
 }
 
 .bio {
-  border: 1px solid;
+  border: 2px solid;
   padding: 2%;
+}
+
+.post {
+  border: 2px solid;
+  margin: 2% 0;
+  padding: 2%;
+}
+
+.like-comment {
+  padding-left: 80%;
+  margin: 0;
+  width:fit-content;
+}
+
+button {
+  font-size: 16px;
+  border: 2px solid;
+  padding: 1%;
+  box-shadow: 5px 5px 0px 0px;
+  background-color: white;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
