@@ -28,7 +28,7 @@ RSpec.describe Post, type: :model do
   end
 
   describe 'Test the Post methode:' do
-    user = User.new(name: "Adam", photo: "https://time.com/3393645/monkey-selfie-lands-photographer-in-legal-quagmire/", bio: "Friendly.", postscounter: 0)
+    user = User.new(name: 'Adam', photo: 'https://time.com/3393645/monkey-selfie-lands-photographer-in-legal-quagmire/', bio: 'Friendly.', postscounter: 0)
     before { 8.times { Comment.new(post: subject, author: user, text: 'Happy to call.') } }
 
     it 'recent five posts should return 5 comments' do
