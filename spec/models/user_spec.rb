@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe 'Test the User class validation:' do
-    subject { User.new(name: "Samy", photo: "https://time.com/3393645/monkey-selfie-lands-photographer-in-legal-quagmire/", bio: "I'm me.", postscounter: 0) }
+    subject { User.new(name: 'Samy', photo: 'https://time.com/3393645/monkey-selfie-lands-photographer-in-legal-quagmire/', bio: "I'm me.", postscounter: 0) }
     before { subject.save }
 
     it 'Name should be given' do
