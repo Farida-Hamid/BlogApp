@@ -3,6 +3,7 @@
     <h2>Post #<%= @post.id%> by <%= @post.author.name%></h2>
     <p>Comments: <%= @post.comments_counter%> Likes: <%= @post.likes_counter%></p>
   </div>
+  <strong><%= @post.title%></strong>
   <p><%= @post.text%></p>
 </div>
 <div class="comments">
