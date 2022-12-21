@@ -9,5 +9,9 @@ RSpec.describe 'user/#index', type: :feature do
     it 'should show the names of all users' do
       @users.each { |user| expect(page).to have_content(user.name) }
     end
+    
+    it 'should show the number of posts of each user' do
+      @users.each { |user| expect(page).to have_content "Number of posts: #{user.postscounter}" }
+    end
   end
 end
