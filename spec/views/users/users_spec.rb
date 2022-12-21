@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'user/#index', type: :view do
+RSpec.describe 'user/#index', type: :feature do
   before :each do
     visit users_path
-    @users = user.all
+    @users = User.all
   end
   describe 'users index view' do
     it 'should show the names of all users' do

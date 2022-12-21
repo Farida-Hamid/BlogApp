@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rubocop', '>= 1.0', '< 2.0'
-ruby '3.1.2'
+ruby '3.0.1'
 
 gem 'rspec-rails', '~> 6.0.0'
 
