@@ -9,7 +9,7 @@ RSpec.describe 'user/#index', type: :feature do
     it 'should show the names of all users' do
       @users.each { |user| expect(page).to have_content(user.name) }
     end
-    
+
     it 'should show the number of posts of each user' do
       @users.each { |user| expect(page).to have_content "Number of posts: #{user.postscounter}" }
     end
@@ -25,7 +25,7 @@ RSpec.describe 'user/#index', type: :feature do
 
       @tom_post = Post.create([
                                 { author: @tom, title: 'Disney Cat', text: 'I hate jerry', likes_counter: 2, comments_counter: 1 },
-                                { author: @tom, title: 'Businessman', text: 'I love doing business', likes_counter: 0, comments_counter: 3}
+                                { author: @tom, title: 'Businessman', text: 'I love doing business', likes_counter: 0, comments_counter: 3 }
                               ])
     end
     before(:example) { visit users_path(@tom) }

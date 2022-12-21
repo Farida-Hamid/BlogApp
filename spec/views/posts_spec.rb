@@ -14,7 +14,7 @@ describe Post, type: :feature do
       bio: 'I\'m a dentist',
       postscounter: 0
     )
-     
+
     @post1 = Post.create(title: 'Gerrting', text: 'Hi there, everyone.', comments_counter: 0, likes_counter: 0, author: @user1)
 
     @comment = Comment.create(text: 'Hi how are you?', author: @user2, post: @post1)
