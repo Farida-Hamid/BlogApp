@@ -13,5 +13,9 @@ RSpec.describe 'user/#index', type: :feature do
     it 'should show the number of posts of each user' do
       @users.each { |user| expect(page).to have_content "Number of posts: #{user.postscounter}" }
     end
+
+    it 'should show the profile picture of each user' do
+      @users.each { |user| expect(page).to have_css("img[src*='#{user.photo}']") }
+    end
   end
 end
