@@ -8,7 +8,7 @@ ruby '3.0.1'
 
 gem 'rails-controller-testing'
 
-gem 'bullet', group: 'development'
+gem 'bullet', group: 'test'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
@@ -78,5 +78,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-  gem "capybara"
+  gem 'bullet'
 end
