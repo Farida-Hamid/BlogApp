@@ -39,19 +39,26 @@ RSpec.describe 'user/#index', type: :feature do
       expect(page).to have_content "Number of posts: #{@tom.postscounter}"
     end
     it 'displays the users bio' do
-      expect(page).to have_content @tom.bio
+      visit user_path(@tom)
+
+      expect(page).to have_content(@tom.bio)
     end
     it 'displays the first three posts' do
+      visit user_path(@tom)
       @tom.recent_posts.each do |post|
         expect(page).to have_content post.text
       end
     end
     it 'I can see the button that lets me view all of a users posts' do
+      visit user_path(@tom)
+
       expect(page).to have_content('See all posts')
     end
     it 'when I click to see all posts, it redirects me to the users posts index page' do
+      visit user_path(@tom)
+
       click_link('See all posts')
       expect(page).to have_current_path(user_posts_path(@tom))
     end
-
+  end
 end
