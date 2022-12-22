@@ -1,13 +1,14 @@
 <div class="post">
   <div class="title-info">
-    <h2>Post #<%= @post.id%></h2>
+    <h2>Post #<%= @post.id%> by <%= @post.author.name%></h2>
     <p>Comments: <%= @post.comments_counter%> Likes: <%= @post.likes_counter%></p>
   </div>
+  <strong><%= @post.title%></strong>
   <p><%= @post.text%></p>
 </div>
 <div class="comments">
-  <% @post.comments.each do |comment|%>
-    <p><%= User.find(comment.author_id).name %>: <%= comment.text %></p>
+  <% @post.comments.includes([:author]).each do |comment|%>
+    <p><%= comment.author.name %>: <%= comment.text %></p>
   <%end%>
 </div>
 <button><%= link_to 'Add a comment', new_user_post_comment_path(@user, @post) %></button>

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   describe 'Test the User class validation:' do
-    subject { User.new(name: "User's name", photo: "User's photo", bio: "User's bio", postscounter: 0) }
+    subject { User.new(name: 'Samy', photo: 'https://time.com/3393645/monkey-selfie-lands-photographer-in-legal-quagmire/', bio: "I'm me.", postscounter: 0) }
     before { subject.save }
 
     it 'Name should be given' do
@@ -20,7 +20,7 @@ RSpec.describe User, type: :model do
   end
 
   describe 'Test the User class methode:' do
-    before { 5.times { Post.create(author: subject, title: 'title', text: 'post text') } }
+    before { 5.times { Post.create(author: subject, title: 'Cool', text: 'Cooler!') } }
 
     it 'Test the recent post methode' do
       expect(subject.recent_posts).to eql(subject.posts.last(3))
