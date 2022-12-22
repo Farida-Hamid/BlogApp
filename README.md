@@ -1,5 +1,5 @@
-<a name="readme-top"></a>
-
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 <!--
 # Blog App
 
@@ -72,7 +72,6 @@ run:
 
 `rspec`
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -85,8 +84,6 @@ run:
 - **[User can make a comment]**
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Editing to the devise views]**
 
