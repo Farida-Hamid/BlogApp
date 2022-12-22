@@ -1,6 +1,5 @@
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-<!--
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Blog App
 
 The Blog app will be a classic example of a blog website. You will create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
@@ -77,15 +76,15 @@ run:
 
 > Describe between 1-3 key features of the application.
 
-- **[User can sign in]**
-- **[User can sign up]**
-- **[User can check posts]**
-- **[User can make a posts]**
-- **[User can make a comment]**
+- User can sign in
+- User can sign up
+- User can check posts
+- User can make a posts
+- User can make a comment
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Editing to the devise views]**
+- [ ] Editing to the devise views]
 
 
 ## 👥 Authors <a name="authors"></a>
