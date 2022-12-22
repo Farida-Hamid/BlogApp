@@ -89,3 +89,23 @@ input[type=submit] {
 .like {
   width: 100%;
 }
+
+.sign {
+  width: 80%;
+  margin: auto;
+}
+
+.field input {
+  width: 98%;
+  border: 2px solid;
+  height: 40px;
+  margin: 2% 0;
+  font-size: large;
+  padding-left: 20px;
+}
+
+.actions input{
+  width: 100%;
+  height: 50px;
+  margin: 50px 0;
+}
