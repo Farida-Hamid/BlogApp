@@ -7,7 +7,7 @@
     </div>
   </div>
   <div>
-    <% @posts.each_with_index do |post, index|%>
+    <% @posts.includes(:author).each_with_index do |post, index|%>
       <div class="post">
         <h3><%=link_to 'Post # ', user_post_path(@user.id, post), :class => 'link'%><%=index%></h3>
         <strong><%= post.title%></strong> written by <strong><%=post.author.name%></strong>
