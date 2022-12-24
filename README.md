@@ -95,6 +95,12 @@ run:
 - LinkedIn: [LinkedIn](https://linkedin.com/in/farida-hamid)
 - GitHub: [@Farida-Hamid](https://github.com/Farida-Hamid)
 
+👤 **Quami Killy**
+
+- GitHub: [@killy10o10](https://github.com/killy10o10)
+- Twitter: [@Quami_Killy](https://twitter.com/Quami_Killy)
+- LinkedIn: [@Kingsley Okine](https://www.linkedin.com/in/kingsley-okine/)
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
