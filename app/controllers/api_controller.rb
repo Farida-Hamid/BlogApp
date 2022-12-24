@@ -16,7 +16,7 @@ class ApiController < ApplicationController
 
     comments = Comment.where(post_id: params[:post_id], author_id: params[:user_id])
 
-    render json: comments, status: ok
+    render json: comments, status: :ok
   end
 
   def add_comment
@@ -27,9 +27,9 @@ class ApiController < ApplicationController
     text = params[:text]
     return unless check_comment_params(text)
 
-    comment = Comment.new(text:, author: @current_user, post_id:)
+    comment = Comment.new(text: text, author: @current_user, post_id: post_id)
     if comment.save
-      render json: comment, status: ok
+      render json: comment, status: :ok
     else
       render json: { error: 'Comment was not created.' }, status: 500
     end
@@ -72,7 +72,7 @@ class ApiController < ApplicationController
 
   def authenticate(authentication_token)
     email = ApiHelper::JsonWebToken.decode(authentication_token)[0]
-    user = User.find_by(email:)
+    user = User.find_by(email: email)
     return false if user.nil?
 
     @current_user = user
