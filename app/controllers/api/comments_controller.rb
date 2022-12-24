@@ -6,7 +6,6 @@ class Api::CommentsController < ApplicationController
     posts = Post.find(params[:post_id])
     comments = posts.comments.includes(:author)
     render json: comments
-
   end
 
   def create
