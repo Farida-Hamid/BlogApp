@@ -12,6 +12,8 @@ gem 'bullet', group: 'test'
 
 gem 'devise'
 
+gem 'devise-jwt'
+
 gem 'letter_opener'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

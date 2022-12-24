@@ -1,8 +1,13 @@
 class User < ApplicationRecord
+  include Devise::JWT::RevocationStrategies::Denylist
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable, :validatable,
+         :confirmable, :lockable, :trackable,
+         :jwt_authenticatable, jwt_revocation_strategy: Denylist
+#
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   before_save :skip_confirmation!
@@ -17,5 +22,9 @@ class User < ApplicationRecord
 
   def recent_posts
     posts.order(created_at: :desc).last(3)
+  end
+
+  def jwt_payload
+    super
   end
 end
