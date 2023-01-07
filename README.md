@@ -19,7 +19,7 @@ You will be building the Blog app for three weeks. Here is the list of projects 
 - Project 9: Add authorization rules.
 - Project 10: Integration specs for Views.
 - Project 11: Add API endpoints.
-- Exercise: API documentation.
+- Final Exercise: API documentation.
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
